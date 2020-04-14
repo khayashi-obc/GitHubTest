@@ -1,0 +1,14 @@
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\bin\Debug\MMDevAnimation.exe.config
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\bin\Debug\MMDevAnimation.exe
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\bin\Debug\MMDevAnimation.pdb
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation.csprojAssemblyReference.cache
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MainWindow.g.cs
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\App.g.cs
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation_MarkupCompile.cache
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation_MarkupCompile.lref
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MainWindow.baml
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation.g.resources
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation.Properties.Resources.resources
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation.csproj.GenerateResource.cache
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation.exe
+C:\Users\KHayashi.OBC-NET\Desktop\MainMenuGroup-master\MMDevAnimation\MMDevAnimation\obj\Debug\MMDevAnimation.pdb

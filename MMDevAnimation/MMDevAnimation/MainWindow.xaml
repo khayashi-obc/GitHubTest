@@ -1,0 +1,103 @@
+﻿<Window x:Class="MMDevAnimation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMDevAnimation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid Grid.Row="0">
+			<StackPanel Orientation="Vertical">
+				<Button x:Name="reset" Content="リセット" Click="reset_Click"/>
+				<Button x:Name="width" Content="幅を変更する" Click="width_Click"/>
+				<Border BorderBrush="LightGreen" BorderThickness="1" Margin="0,1"/>
+				
+				<Button x:Name="expand" Content="拡大アニメーション" Click="expand_Click"/>
+				<Button x:Name="reserve" Content="拡大アニメーション（繰り返し）" Click="reserve_Click"/>
+				<Border BorderBrush="LightGreen" BorderThickness="1" Margin="0,1"/>
+
+				<Button x:Name="fadeIn" Content="フェードインするアニメーション" Click="fadeIn_Click"/>
+				<Button x:Name="reserveFadeIn" Content="フェードインするアニメーション（繰り返し）" Click="reserveFadeIn_Click"/>
+				<Border BorderBrush="LightGreen" BorderThickness="1" Margin="0,1"/>
+
+				<Button x:Name="slide" Content="スライドするアニメーション" Click="slide_Click"/>
+				<Button x:Name="reserveSlide" Content="閉じる" Click="reserveSlide_Click"/>
+			</StackPanel>
+		</Grid>
+		<Border Grid.Row="1" Margin="0,5" BorderThickness="1" BorderBrush="LightGreen"/>
+		<Grid Grid.Row="2" x:Name="animationArea">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Grid x:Name="header" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Height="30">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Border x:Name="cube" Background="Blue" BorderBrush="Blue" BorderThickness="2" Width="30"/>
+				<Border Grid.Column="1" Background="#FF004C89"/>
+			</Grid>
+			<Grid x:Name="contents" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Border x:Name="menuList" Width="30" BorderThickness="1" BorderBrush="Black"/>
+				<Grid Grid.Column="1">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+					<Border x:Name="favorite" Background="#FF0062B3" Height="70"/>
+					<Border x:Name="board" Grid.Row="1" Background="LightGray"/>
+				</Grid>
+			</Grid>
+			<Border x:Name="menuSearch" Grid.Row="1" Grid.Column="0" Width="150" Background="White" BorderBrush="#FF1F4E79" BorderThickness="2" Height="150" VerticalAlignment="Bottom" Visibility="Collapsed">
+				<StackPanel Orientation="Horizontal">
+					<Border Width="30" Background="#FF1F4E79"/>
+					<Border BorderBrush="Black" BorderThickness="1" Height="30" Width="110" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
+				</StackPanel>
+			</Border>
+			<Border x:Name="slidePage" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Background="White">
+				<Border.RenderTransform>
+					<TranslateTransform X="-800" Y="0" />
+				</Border.RenderTransform>
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="50"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+					<TextBlock Grid.Row="1" Text="メインメニューの設定" FontSize="20" Foreground="#FF1F4E79" HorizontalAlignment="Center"/>
+					<Border Grid.Row="2" Width="600" BorderBrush="#FF1F4E79" BorderThickness="1">
+						<StackPanel Orientation="Horizontal" Margin="20">
+							<Border BorderBrush="#FF1F4E79" Width="120" Margin="10" BorderThickness="1">
+								<TextBlock Text="色を変更する" Foreground="#FF1F4E79" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+							</Border>
+							<Border BorderBrush="#FF1F4E79" Width="120" Margin="10" BorderThickness="1">
+								<TextBlock Text="お気に入りを登録する" Foreground="#FF1F4E79" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+							</Border>
+							<Border BorderBrush="#FF1F4E79" Width="120" Margin="10" BorderThickness="1">
+								<TextBlock Text="ダッシュボードを変更する" Foreground="#FF1F4E79" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+							</Border>
+							<Border BorderBrush="#FF1F4E79" Width="120" Margin="10" BorderThickness="1">
+								<TextBlock Text="チャットボットの使い方" Foreground="#FF1F4E79" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+							</Border>
+						</StackPanel>
+					</Border>
+				</Grid>
+			</Border>
+		</Grid>
+	</Grid>
+</Window>
