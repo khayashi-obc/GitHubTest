@@ -83,6 +83,7 @@ namespace MMDevAnimation
 		/// <param name="e"></param>
 		private void width_Click(object sender, RoutedEventArgs e)
 		{
+			this.menuList.Width = 150;
 		}
 		private void reset_Click(object sender, RoutedEventArgs e)
 		{
